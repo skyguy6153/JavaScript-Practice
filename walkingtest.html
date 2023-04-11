@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Walking Test
+        </title>
+        <script>
+            function changeit() {
+                var spot = document.getElementById("mylist");
+                var item1 = spot.firstChild;
+                var item2 = item1.nextSibling;
+                var item3 = item2.nextSibling;
+                var item4 = item3.nextSibling;
+                item1.innerHTML = "Pizza";
+                item2.innerHTML = "Cookies";
+                item3.innerHTML = "Soda";
+                item4.innerHTML = "Hamburger";
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Changing elements by walking</h1>
+        <h2>Here's a list of junk food</h2>
+        <ul id="my list"> <li>Carrots</li> <li>Broccoli</li> <li> Mustard Greens</li> <li>Tofu</li> </ul>
+        <button type="button" onclick="changeit()">
+            Change the list
+        </button>
+    </body>
+</html>
