@@ -1,0 +1,33 @@
+<!--
+    To show off what I learned with the switch statement, I have made a game of trying to find my age.
+    If you guess too low or too high,  a alert will pop up and you'll need to refresh the webpage to 
+    try again.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing the switch statement</title>
+    <script>
+        var age = prompt("Can you guess my age?"); //asking user to input what they think my age is
+    </script>
+</head>
+<body>
+    <script> //change the number inside of case statement if you want to try a different age!
+        switch (true) {
+            case (age < 24):
+            alert("Sorry, you have guessed to low."); //Output when guess is too low
+            break;
+
+            case (age > 24): 
+            alert("Sorry, you have guessed to high."); //Output when guess is too high
+            break;
+
+            case (age == 24):
+            alert("Correct, I am 24!"); //Output when guessed age is correct
+        }
+    </script>
+</body>
+</html>
