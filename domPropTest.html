@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Testing DOM properties</title>
+    </head>
+    <body>
+        <h1 id="h1">This is the heading of the web page.</h1>
+        <p>This is sample text</p>
+        <br>
+        <button type="button" onclick="changeme('red')">Click to change my color</button>
+        <button type="button" onclick="changeme('orange')">I can change too!</button>
+        <button type="button" onclick="changeme('green')">Green with envy!</button>
+        <button type="button" onclick="changeme('purple')">Purple rain</button>
+        <button type="button" onclick="changeme('white')">The OG</button>
+        <button type="button" onclick='document.getElementById("h1").innerHTML = "You should not have hit that..."'>Wait a minute?!</button>
+        <button type="button" onclick='docuemnt.getElementById("h1").innerHTML = "This is the heading of the web page."'>Back to normal!</button>
+    
+        <script>
+            function changeme(color) {
+                document.body.style.backgroundColor = color;
+            }
+
+           confirm()
+        
+        </script>
+    </body>
+</html>
