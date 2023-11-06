@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Testing Button Events</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script>
+            // Function triggered when a button is clicked, displaying an alert with text based on the button's name
+            function clickme(name) { 
+                if (name == "help") {
+                    //  Displays the below alert message if 'help' is clicked
+                    alert("Do you need some help?"); 
+                } else if ( name == "buy") {
+                    //  Displays the below alert message if 'buy' is clicked
+                    alert("What would you like to buy?");
+                } else if (name == "browse") {
+                    //  Displays the below alert message if 'browse' is clicked
+                    alert("You can browse our catalog");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Store Menu</h1>
+        <p>Here are the current options:</p>
+        <button onclick="clickme('buy')">Buy a product</button>
+        <button onclick="clickme('browse')">Browse our selection</button>
+        <button onclick="clickme('help')">Get Help</button>
+    </body>
+</html>

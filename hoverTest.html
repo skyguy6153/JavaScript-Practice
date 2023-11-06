@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Testing Mouse Events</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <style>
+            #test {
+                background-color: yellow;
+                width: 400px;
+            }
+        </style>
+        <script>
+            // Function to change background-color of the 'test' element, based on mouse events.
+            function changeit(state) {
+                if (state == "in") {    // if mouse hovers over 'test' elements text...
+                    document.getElementById("test").style.backgroundColor="red";    // change background-color to red when hovered over.
+                } else if (state == "out") {    // if not hovered over or moved away frome 'test' element text...
+                    document.getElementById("test").style.backgroundColor="yellow"; //  leave it as is, or change background-color to yellow.
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>This is a test of the mouse events</h1>
+        <!-- 'Listeners' attached to p tag: 'in' on mouse hover, 'out' when not hovered over. -->
+        <p id="test" onmouseover="changeit('in')" onmouseout="changeit('out')">This is some content that will change color!</p> 
+    </body>
+</html>
